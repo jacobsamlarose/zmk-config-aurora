@@ -56,14 +56,14 @@
 	 	 
 		 combo_equals_l {
            timeout-ms = <2000>;
-           key-positions = <24 29>;
-		   layers = <1>;
+           key-positions = <25 29>;
+	   layers = <1>;
            bindings = <&kp KP_EQUAL>;
          };
      
      	 combo_equals_r {
            timeout-ms = <2000>;
-           key-positions = <35 29>;
+           key-positions = <34 29>;
            layers = <1>;
            bindings = <&kp KP_EQUAL>;
          };
@@ -106,13 +106,14 @@
 		
 	     combo_del {
            timeout-ms = <800>;
-           key-positions = <10 21>;
-           bindings = <&kp DEL>;
+           key-positions = <31 32>;
+	   layers = <0>;
+           bindings = <&kp BSPC>;
          };
 
 	   combo_bspc {
            timeout-ms = <800>;
-           key-positions = <9 22>;
+           key-positions = <32 33>;
            bindings = <&kp DEL>;
          };
 		
@@ -162,9 +163,9 @@
 // | SHFT |  Z  |  X  |  C  |  V       |    B     |   |  N  |  M   |  ,  |  .  |  /  | SHFT/CAPW |
 //                    | ALT | CMD(HYP) | CTL(ENT) |   | SPC | FN2  | FN1 |
                         bindings = <
-   &kp TAB     &kp Q    	&kp W    	&kp E       	&kp R      	&kp T          	&kp Y   &kp U    &kp I       &kp O    &kp P     &kp BSPC
-   &kp CAPS    &kp A    	&kp S    	&kp D       	&kp F      	&kp G          	&kp H   &kp J    &kp K       &kp L    &kp SEMI  &kp SQT
-   &kp LSHFT   &mt LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          	&kp N   &kp M    &kp COMMA   &kp DOT  &mt RSHFT FSLH  &td0
+   &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          	&kp Y   &kp U    	&kp I       &kp O    &kp P     	&none
+   &none   &kp A    		&kp S    	&kp D       	&mt LGUI F      &kp G          	&kp H   &mt RGUI J    	&kp K       &kp L    &kp SEMI  	&none
+   &none   &mt LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          	&kp N   &kp M    	&kp COMMA   &kp DOT  &mt RSHFT FSLH  	&none
                                 &mt LALT ESC    &mt LGUI TAB  	&mt LCTRL RET  	&lt 2 SPACE	&mo 1	&kp CAPS
                         >;
                 };
@@ -177,8 +178,8 @@
                         bindings = <
    &none	&none    	&kp N1  &kp N2	&kp N3  &kp MINUS     	&kp N6   	&kp N7   	&kp N8      &kp N9      &kp BSPC   	&none    
    &none	&kp SEMI	&kp N4  &kp N5	&kp N6  &kp PLUS      	&none		&none		&kp UP      &kp GRAVE	&kp SQT		&none       
-   &none	&kp LSHFT    	&kp N7  &kp N8	&kp N9  &kp N0        	&none    	&kp LEFT    	&kp DOWN    &kp RIGHT   &kp BSLH	&none
-                                	&trans  &trans	&trans		&lt 3 SPACE   	&trans   &kp C_EJECT
+   &none	&kp LSHFT    	&kp N7  &kp N8	&kp N9  &kp N0        	&none    	&kp LEFT    	&kp DOWN    &kp RIGHT   &mt RSHFT BSLH	&none
+                                	&trans  &trans	&trans		&lt 3 SPACE   	&trans   	&kp C_EJECT
                         >;
                 };
 		
@@ -189,25 +190,12 @@
 // |         | BRI - | HUE - | SAT - 	| EFF -   | VOL-    |   |   	  |       |       |       |       |         |
 //                           | PWR_OFF  | PWR_OFF | PWR_TOG	| 	| 		  |       |       |
                         bindings = <
-   &kp ESC          &kp C_PREV       &kp C_RW         &kp C_PP          &kp C_FF		&kp C_NEXT		&bt BT0 &bt BT1  &bt BT2 &bt BT3   	&bt BT4	 	&none
-   &rgb_ug RGB_TOG  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI   &rgb_ug RGB_EFF		&kp C_VOL_UP		&kp F1  &kp F2   &kp F3	 &kp F4		&kp F5	 	&none	 
-   &out OUT_TOG     &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD   &rgb_ug RGB_EFR		&kp C_VOL_DN		&kp F6	&kp F7   &kp F8	 &bt BT_CLR   	&out OUT_TOG	 &none	 
-                                                      &ext_power EP_OFF &ext_power EP_ON	&ext_power EP_TOG  	&trans  &trans  &rgb_ug RGB_TOG
+   &none        &kp C_PREV       &kp C_RW         &kp C_PP          &kp C_FF		&kp C_NEXT		&bt BT0 &bt BT1  &bt BT2 &bt BT3   	&bt BT4	 	&none
+   &none  	&rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI   &rgb_ug RGB_EFF	&kp C_VOL_UP		&kp F1  &kp F2   &kp F3	 &kp F4		&bt BT_CLR	&none	 
+   &none     	&rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD   &rgb_ug RGB_EFR	&kp C_VOL_DN		&kp F5	&kp F6   &kp F7  &kp F8		&out OUT_TOG	 &none	 
+                                        &ext_power EP_OFF &ext_power EP_ON	&ext_power EP_TOG  		&trans  &trans   &rgb_ug RGB_TOG
                         >;
                 };
 		
-		travel_layer {
-// -----------------------------------------------------------------------------------------
-// |       |       |       |       |       |         |   |         |       |       |       |       |        |
-// |       |       |       |       |       |         |   |         |       |       |       |       |        |
-// |       |       |       |       |       |         |   |         |       |       |       |       |        |
-//                         |       |       | SUSPEND |   | SUSPEND |       |       |
-                        bindings = <
-   &none       &none    &none    &none    &none    &none        &none      &none   &none   &none     &none     &none 
-   &none       &none    &none    &none    &none    &none        &none      &none   &none   &none     &none     &none 
-   &none       &none    &none    &none    &none    &none     	&none      &none   &none   &none     &none     &none 
-                                 &none    &none    &none     	&none   &none   &none
-                        >;
-                };
         };
 };

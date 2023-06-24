@@ -148,7 +148,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&kp RSHFT>, <&caps_word>;
+            bindings = <&kp CAPS>, <&caps_word>;
         };
 	
     };
@@ -166,7 +166,7 @@
    &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          	&kp Y   &kp U    	&kp I       &kp O    &kp P     	&none
    &none   &kp A    		&kp S    	&kp D       	&mt LGUI F      &kp G          	&kp H   &mt RGUI J    	&kp K       &kp L    &kp SEMI  	&none
    &none   &mt LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          	&kp N   &kp M    	&kp COMMA   &kp DOT  &mt RSHFT FSLH  	&none
-                                &mt LALT ESC    &mt LGUI TAB  	&mt LCTRL RET  	&lt 2 SPACE	&mo 1	&kp CAPS
+                                &mt LALT ESC    &mt LGUI TAB  	&mt LCTRL RET  	&lt 2 SPACE	&mo 1	&td0
                         >;
                 };
                 num_layer {

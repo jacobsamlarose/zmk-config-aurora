@@ -20,6 +20,10 @@
 #define BT4 BT_SEL 4
 // #define MO_TOG(layer) &mo_tog layer layer   // Macro to apply momentary-layer-on-hold/toggle-layer-on-tap to a specific layer
 
+&led_strip {
+    chain-length = <36>;
+};
+
 / {
 	chosen {
 		zmk,underglow = &led_strip;

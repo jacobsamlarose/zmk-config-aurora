@@ -79,7 +79,7 @@
          combo_tog1 {
            timeout-ms = <500>;
            key-positions = <39 41>;
-           bindings = <&tog 1>;
+           bindings = <&tog 2>;
          };
          
          combo_tog2 {
@@ -91,7 +91,7 @@
          combo_tog3 {
            timeout-ms = <800>;
            key-positions = <39 40 41>;
-           bindings = <&tog 2>;
+           bindings = <&tog 3>;
          };
          
          combo_hyper {

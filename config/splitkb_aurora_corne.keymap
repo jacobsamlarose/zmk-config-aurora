@@ -58,11 +58,11 @@
 
 	combo_awtab {
            timeout-ms = <2000>;
-           key-positions = <2 13>;
+           key-positions = <1 2>;
            bindings = <&kp TAB>;
          };
 	 	 
-		 combo_equals_l {
+	combo_equals_l {
            timeout-ms = <2000>;
            key-positions = <25 29>;
 	   layers = <1>;

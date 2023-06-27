@@ -182,9 +182,9 @@
 // |  SHFT |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none	&kp N1  &kp N2	&kp N3  &kp N4      	&kp N5      	&kp N6   	&kp N7   	&kp N8      &kp N9      &kp N0   	&none    
-   &none	&kp N4  &kp N5	&kp N6  &kp SEMI	&kp MINUS      	&none		&none		&kp UP      &kp GRAVE	&kp SEMI	&none       
-   &none	&kp N7  &kp N8	&kp N9  &kp N0        	&kp PLUS    	&none		&kp LEFT    	&kp DOWN    &kp RIGHT   &mt RSHFT BSLH	&none
+   &none	&kp N1  	&kp N2	&kp N3  &kp N4      	&kp N5      	&kp N6   	&kp N7   	&kp N8      &kp N9      &kp N0   	&none    
+   &none	&kp N4  	&kp N5	&kp N6  &kp SEMI	&kp MINUS      	&none		&none		&kp UP      &kp GRAVE	&kp SEMI	&none       
+   &none	&mt LSHIFT N7 	&kp N8	&kp N9  &kp N0        	&kp PLUS    	&none		&kp LEFT    	&kp DOWN    &kp RIGHT   &mt RSHFT BSLH	&none
                                 	&trans  &trans	&trans		&kp SPACE   	&trans   	&kp C_EJECT
                         >;
                 };

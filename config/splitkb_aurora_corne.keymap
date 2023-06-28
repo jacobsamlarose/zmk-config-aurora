@@ -43,28 +43,29 @@
     combos {
          compatible = "zmk,combos";
 
-         // after https://github.com/bcat/zmk-config/commit/0f0b57ff233a56345426d3139d3d26906ecd7f18
-         combo_unlock {
-           timeout-ms = <2000>;
-           key-positions = <0 11 24 35>;
-           bindings = <&tog 4>;
-         };
-	 
-	 combo_showkb {
-           timeout-ms = <2000>;
-           key-positions = <12 37>;
-           bindings = <&kp C_EJECT>;
+	combo_appswitch {
+           timeout-ms = <1000>;
+           key-positions = <37 41>;
+           bindings = <&kp LG(TAB)>;
          };
 
 	combo_ques {
-           timeout-ms = <2000>;
+           timeout-ms = <1000>;
            key-positions = <33 34>;
+	   layers = <0>;
            bindings = <&kp QMARK>;
          };
 
-	combo_awtab {
+	combo_capz {
+           timeout-ms = <1000>;
+           key-positions = <25 26>;
+	   layers = <0>;
+           bindings = <&kp LS(Z)>;
+         };
+
+	combo_qwtab {
            timeout-ms = <2000>;
-           key-positions = <1 2>;
+           key-positions = <1 2 37>;
            bindings = <&kp TAB>;
          };
 	 	 
@@ -75,71 +76,35 @@
            bindings = <&kp KP_EQUAL>;
          };
      
-     	 combo_equals_r {
+     	combo_equals_r {
            timeout-ms = <2000>;
            key-positions = <34 29>;
            layers = <1>;
            bindings = <&kp KP_EQUAL>;
          };
          
-         combo_tog1 {
+        combo_tog2 {
            timeout-ms = <500>;
            key-positions = <39 41>;
            bindings = <&tog 2>;
          };
          
-         combo_tog2 {
+        combo_tog1 {
            timeout-ms = <500>;
            key-positions = <39 40>;
            bindings = <&tog 1>;
          };
          
-         combo_tog3 {
+        combo_tog3 {
            timeout-ms = <800>;
            key-positions = <39 40 41>;
            bindings = <&tog 3>;
          };
          
-         combo_hyper {
+        combo_hyper {
            timeout-ms = <800>;
            key-positions = <19 20 21>;
            bindings = <&sk LG(LS(LA(LCTRL)))>;
-         };
-		
-		 combo_lpar {
-           timeout-ms = <800>;
-           key-positions = <28 29>;
-           bindings = <&kp LPAR>;
-         };
-		
-	     combo_rpar {
-           timeout-ms = <800>;
-           key-positions = <30 31>;
-           bindings = <&kp RPAR>;
-         };
-		
-		combo_lbkt {
-           timeout-ms = <800>;
-           key-positions = <16 17>;
-           bindings = <&kp LBKT>;
-         };
-		
-	     combo_rbkt {
-           timeout-ms = <800>;
-           key-positions = <18 19>;
-           bindings = <&kp RBKT>;
-         };
-		
-		combo_lbrc {
-           timeout-ms = <800>;
-           key-positions = <4 5>;
-           bindings = <&kp LBRC>;
-         };
-		
-	     combo_rbrc {
-           timeout-ms = <800>;
-           key-positions = <6 7>;
-           bindings = <&kp RBRC>;
          };
      };
      
@@ -202,10 +167,10 @@
 // |    |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none	&kp TAB    	&none  &none	&none  &kp DEL    	&kp N6   	&kp F1  &kp F2	&kp F3  &kp BSPC   	&none    
-   &none	&none		&none  &none	&none  &kp MINUS      	&none		&kp F4  &kp F5	&kp F6	&kp SEMI	&none       
-   &none	&kp LSHFT    	&none  &none	&none  &kp PLUS       	&kp DEL    	&kp F7  &kp F8	&kp F9  &mt RSHFT BSLH	&none
-                                	&trans  &trans	&trans		&kp SPACE   	&trans  &kp C_EJECT
+   &none	&kp TAB    	&none  	&kp LPAR	&kp RPAR  	&kp DEL    	&kp N6   	&kp F1  &kp F2	&kp F3  &kp BSPC   	&none    
+   &none	&none		&none  	&kp LBKT	&kp RBKT  	&kp MINUS      	&none		&kp F4  &kp F5	&kp F6	&kp SEMI	&none       
+   &none	&kp LSHFT    	&none  	&kp LBRC	&kp RBRC  	&kp PLUS       	&kp DEL    	&kp F7  &kp F8	&kp F9  &mt RSHFT BSLH	&none
+                                	&trans  	&trans		&trans		&kp SPACE   	&trans  &kp C_EJECT
                         >;
                 };
 		

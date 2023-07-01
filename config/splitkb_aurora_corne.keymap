@@ -106,6 +106,42 @@
            key-positions = <19 20 21>;
            bindings = <&sk LG(LS(LA(LCTRL)))>;
          };
+
+	combo_lpar {
+           timeout-ms = <800>;
+           key-positions = <4 5>;
+           bindings = <&kp LPAR>;
+         };
+		
+	combo_rpar {
+           timeout-ms = <800>;
+           key-positions = <6 7>;
+           bindings = <&kp RPAR>;
+         };
+		
+	combo_lbkt {
+           timeout-ms = <800>;
+           key-positions = <16 17>;
+           bindings = <&kp LBKT>;
+         };
+		
+	combo_rbkt {
+           timeout-ms = <800>;
+           key-positions = <18 19>;
+           bindings = <&kp RBKT>;
+         };
+		
+	combo_lbrc {
+           timeout-ms = <800>;
+           key-positions = <28 29>;
+           bindings = <&kp LBRC>;
+         };
+		
+	combo_rbrc {
+           timeout-ms = <800>;
+           key-positions = <30 31>;
+           bindings = <&kp RBRC>;
+         };
      };
      
      behaviors {

@@ -205,7 +205,7 @@
                         bindings = <
    &none	&kp TAB  	&kp EXCL	&kp AT   	&kp LPAR      	&kp RPAR      	&kp TILDE 	&none   	&kp PIPE    &none	&kp BSPC   	&none    
    &none	&kp SEMI  	&kp DLLR	&kp PRCNT  	&kp CARET   	&kp MINUS	&none		&none		&kp UP      &kp GRAVE	&kp SEMI	&none       
-   &none	&mt LSHIFT N7 	&kp AMPS	&kp STAR  	&kp NUHS	&kp PLUS	&none		&kp LEFT    	&kp DOWN    &kp RIGHT   &mt RSHFT BSLH	&none
+   &none	&kp LSHIFT 	&kp AMPS	&kp STAR  	&kp NUHS	&kp PLUS	&none		&kp LEFT    	&kp DOWN    &kp RIGHT   &mt RSHFT BSLH	&none
                                 		&trans  	&trans		&trans		&kp SPACE   	&trans   	&kp C_EJECT
                         >;
                 };

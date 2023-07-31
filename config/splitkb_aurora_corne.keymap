@@ -65,14 +65,14 @@
 	 	 
 	combo_equals_l {
            timeout-ms = <2000>;
-           key-positions = <25 29>;
+           key-positions = <25 17>;
 	   layers = <2>;
            bindings = <&kp KP_EQUAL>;
          };
      
      	combo_equals_r {
            timeout-ms = <2000>;
-           key-positions = <34 29>;
+           key-positions = <34 17>;
            layers = <2>;
            bindings = <&kp KP_EQUAL>;
          };
@@ -205,9 +205,9 @@
 // |  SHFT |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none	&kp TAB  	&kp EXCL	&kp AT   	&kp LPAR      	&kp RPAR      	&kp TILDE 	&none   	&kp PIPE    &none	&bspc_del   	&none    
-   &none	&kp SEMI  	&kp DLLR	&kp PRCNT  	&kp CARET   	&kp MINUS	&none		&none		&kp UP      &kp GRAVE	&kp SEMI	&none       
-   &none	&kp LSHIFT 	&kp AMPS	&kp STAR  	&kp LA(N3)	&kp PLUS	&none		&kp LEFT    	&kp DOWN    &kp RIGHT   &mt RSHFT BSLH	&none
+   &none	&kp GRAVE  	&kp EXCL	&kp AT   	&kp HASH      	&kp TILDE      	&kp C_RW        &kp C_PP        &kp C_FF    &none	&bspc_del   	&none    
+   &none	&kp PIPE  	&kp DLLR	&kp PRCNT  	&kp CARET   	&kp MINUS	&kp C_VOL_UP	&none		&kp UP      &kp COLON	&kp SEMI	&none       
+   &none	&kp LSHIFT 	&kp AMPS	&kp STAR  	&kp LA(N3)	&kp PLUS	&kp C_VOL_DN	&kp LEFT    	&kp DOWN    &kp RIGHT   &mt RSHFT BSLH	&none
                                 		&trans  	&trans		&trans		&kp SPACE   	&trans   	&kp C_EJECT
                         >;
                 };
@@ -219,9 +219,9 @@
 // |    |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none	&kp TAB    	&kp EXCL	&kp AT   	&kp HASH    	&kp COLON	&kp LBRC	&kp N1  &kp N2  &kp N3	&bspc_del   	&none    
-   &none	&kp SEMI  	&kp DLLR	&kp PRCNT  	&kp CARET  	&kp MINUS      	&kp LBKT 	&kp N4  &kp N5	&kp N6	&kp SEMI	&none       
-   &none	&kp LSHFT    	&kp AMPS	&kp STAR  	&kp LA(N3)	&kp PLUS  	&kp LPAR  	&kp N7 	&kp N8	&kp N9  &mt RSHFT N0	&none
+   &none	&kp TAB    	&kp N1  	&kp N2  	&kp N3    	&kp MINUS	&none		&kp EXCL	&kp AT   	&kp HASH	&bspc_del   	&none    
+   &none	&kp PIPE  	&kp N4  	&kp N5		&kp N6  	&kp PLUS      	&kp COLON 	&kp UP		&kp PRCNT  	&kp COLON	&kp SEMI	&none       
+   &none	&kp LSHFT    	&kp N7 		&kp N8		&kp N9		&kp N0  	&kp LEFT    	&kp DOWN    	&kp RIGHT  	&kp LA(N3)  &mt RSHFT N0	&none
                                 &trans  	&trans		&trans		&kp SPACE   	&trans  	&kp C_EJECT
                         >;
                 };

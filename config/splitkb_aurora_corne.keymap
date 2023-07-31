@@ -219,8 +219,8 @@
 // |    |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none	&kp TAB    	&kp N1  	&kp N2  	&kp N3    	&kp MINUS	&none		&kp EXCL	&kp AT   	&kp HASH	&bspc_del   	&none    
-   &none	&kp PIPE  	&kp N4  	&kp N5		&kp N6  	&kp PLUS      	&kp COLON 	&kp UP		&kp PRCNT  	&kp COLON	&kp SEMI	&none       
+   &none	&kp TAB    	&kp N1  	&kp N2  	&kp N3    	&kp MINUS	&kp STAR	&kp EXCL	&kp AT   	&kp HASH	&bspc_del   	&none    
+   &none	&kp PIPE  	&kp N4  	&kp N5		&kp N6  	&kp PLUS      	&kp AMPS	&kp UP		&kp PRCNT  	&kp COLON	&kp SEMI	&none       
    &none	&kp LSHFT    	&kp N7 		&kp N8		&kp N9		&kp N0  	&kp LEFT    	&kp DOWN    	&kp RIGHT  	&kp LA(N3)  &mt RSHFT N0	&none
                                 &trans  	&trans		&trans		&kp SPACE   	&trans  	&kp C_EJECT
                         >;

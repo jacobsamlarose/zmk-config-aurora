@@ -63,20 +63,6 @@
            bindings = <&kp LS(Z)>;
          };
 	 	 
-	combo_equals_l {
-           timeout-ms = <2000>;
-           key-positions = <25 17>;
-	   layers = <2>;
-           bindings = <&kp KP_EQUAL>;
-         };
-     
-     	combo_equals_r {
-           timeout-ms = <2000>;
-           key-positions = <34 17>;
-           layers = <2>;
-           bindings = <&kp KP_EQUAL>;
-         };
-
 	combo_btclear {
            timeout-ms = <2000>;
            key-positions = <21 22>;
@@ -114,7 +100,7 @@
            timeout-ms = <800>;
            key-positions = <39 40 41>;
 	   layers = <3>; 
-           bindings = <&tog 0>;
+           bindings = <&to 0>;
          };
          
         combo_hyper {

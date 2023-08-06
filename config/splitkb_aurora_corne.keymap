@@ -106,14 +106,14 @@
         combo_tog3 {
            timeout-ms = <800>;
            key-positions = <39 40 41>;
-	   layers = <0 1 2> 
+	   layers = <0 1 2>;
            bindings = <&tog 3>;
          };
 
 	combo_togReset {
            timeout-ms = <800>;
            key-positions = <39 40 41>;
-	   layers = <3> 
+	   layers = <3>; 
            bindings = <&tog 0>;
          };
          

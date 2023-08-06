@@ -192,10 +192,10 @@
 // | SHFT |  Z  |  X  |  C  |  V       |    B     |   |  N  |  M   |  ,  |  .  |  /  | SHFT/CAPW |
 //                    | ALT (ESC) | CMD (ALT) | CTL(ENT) |   | SPC | FN2  | FN1 |
                         bindings = <
-   &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          	&kp Y   &kp U    	&kp I       &kp O    	&kp P     		&none
-   &none   &kp A    		&kp S    	&kp D       	&hm LGUI F      &kp G          	&kp H   &hm RGUI J    	&kp K       &kp L    	&kp SQT  		&none
-   &none   &mt LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          	&kp N   &kp M    	&kp COMMA   &kp DOT  	&mt RSHFT FSLH  	&none
-                                &mt LALT ESC    &mt LGUI TAB  	&mt LCTRL RET  	&lt 2 SPACE	&mo 1	&td0
+   &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          	&kp Y   	&kp U    	&kp I       &kp O    	&kp P     		&none
+   &none   &kp A    		&kp S    	&kp D       	&hm LGUI F      &kp G          	&kp H   	&hm RGUI J    	&kp K       &kp L    	&kp SQT  		&none
+   &none   &mt LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          	&kp N   	&kp M    	&kp COMMA   &kp DOT  	&mt RSHFT FSLH  	&none
+                                		&mt LALT ESC    &mt LGUI TAB  	&mt LCTRL RET  	&lt 2 SPACE	&lt 1 caps_word	&kp CAPS
                         >;
                 };
                 nav_layer {
@@ -219,8 +219,8 @@
 // |    |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none	&kp TAB    	&kp N1  	&kp N2  	&kp N3    	&kp MINUS	&kp STAR	&kp EXCL	&kp AT   	&kp HASH	&bspc_del   	&none    
-   &none	&kp PIPE  	&kp N4  	&kp N5		&kp N6  	&kp PLUS      	&kp AMPS	&kp UP		&kp PRCNT  	&kp COLON	&kp SEMI	&none       
+   &none	&kp TAB    	&kp N1  	&kp N2  	&kp N3    	&kp PLUS	&kp GRAVE	&kp EXCL	&kp AT   	&kp HASH	&bspc_del   	&none    
+   &none	&kp PIPE  	&kp N4  	&kp N5		&kp N6  	&kp MINUS      	&kp AMPS	&kp UP		&kp PRCNT  	&kp COLON	&kp SEMI	&none       
    &none	&kp LSHFT    	&kp N7 		&kp N8		&kp N9		&kp N0  	&kp LEFT    	&kp DOWN    	&kp RIGHT  	&kp LA(N3)  &mt RSHFT N0	&none
                                 &trans  	&trans		&trans		&kp SPACE   	&trans  	&kp C_EJECT
                         >;

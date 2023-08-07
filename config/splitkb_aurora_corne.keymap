@@ -148,6 +148,7 @@
 	combo_fnup {
            timeout-ms = <300>;
            key-positions = <20 39>;
+	   layers = <2>;
            bindings = <&kp CAPS &kp UP>;
          };
 

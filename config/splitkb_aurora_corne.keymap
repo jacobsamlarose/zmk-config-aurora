@@ -86,30 +86,6 @@
            bindings = <&to 0>;
          };
          
-        fn_left {
-           timeout-ms = <800>;
-           key-positions = <32 41>;
-           bindings = <&kp LEFT &kp CAPS>;
-        };
-
-	fn_right {
-           timeout-ms = <800>;
-           key-positions = <34 41>;
-           bindings = <&kp RIGHT &kp CAPS>;
-        };
-
-	fn_up {
-           timeout-ms = <800>;
-           key-positions = <21 41>;
-           bindings = <&kp UP &kp CAPS>;
-        };
-
-	fn_down {
-           timeout-ms = <800>;
-           key-positions = <33 41>;
-           bindings = <&kp DOWN &kp CAPS>;
-        };
-
 	combo_lpar {
            timeout-ms = <300>;
            key-positions = <4 5>;
@@ -201,7 +177,7 @@
 // |  SHFT |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none	&kp EXCL	&kp AT   	&kp LA(N3)     	&kp EQUAL      	&kp GRAVE  	&kp LG(LS(3))	&kp C_RW        	&kp C_PP        &kp C_FF	&bspc_del   	&none    
+   &none	&kp EXCL	&kp AT   	&kp LA(N3)     	&kp EQUAL      	&kp GRAVE  	&none		&kp C_RW        	&kp C_PP        &kp C_FF	&bspc_del   	&none    
    &none	&kp DLLR	&kp PRCNT  	&kp CARET   	&kp MINUS	&kp PIPE  	&none		&sk LG(LS(LA(LCTRL)))	&kp UP		&kp COLON	&kp SEMI	&none       
    &none	&mt LSHIFT AMPS	&kp STAR  	&kp LBKT	&kp RBKT	&kp TILDE	&none		&kp LEFT    		&kp DOWN	&kp RIGHT	&mt RSHFT BSLH	&none
                                 		&trans  	&trans		&trans		&trans   	&trans   		&kp C_EJECT

@@ -174,10 +174,10 @@
 // | SHFT |  Z  |  X  |  C  |  V       |    B     |   |  N  |  M   |  ,  |  .  |  /  | SHFT/CAPW |
 //                    | ALT (ESC) | CMD (ALT) | CTL(ENT) |   | SPC | FN2  | FN1 |
                         bindings = <
-   &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          		&kp Y   	&kp U    	&kp I       	&kp O    	&kp P     	&none
-   &none   &kp A    		&kp S    	&kp D       	&hm LGUI F      &kp G          		&kp H   	&kp J    	&kp K       	&kp L    	&kp SQT  	&none
-   &none   &ht_tp LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          		&kp N   	&kp M    	&kp COMMA   	&kp DOT  	&mt RSHFT FSLH  &none
-                                		&mt LALT ESC    &mt LGUI TAB  	&mt LCTRL RET  		&lt 2 SPACE	&mo 1		&kp CAPS 
+   &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          		&kp Y   	&kp U    		&kp I       	&kp O    	&kp P     	   	&none
+   &none   &kp A    		&kp S    	&kp D       	&hm LGUI F      &kp G          		&kp H   	&kp J    		&kp K       	&kp L    	&kp SQT  	   	&none
+   &none   &ht_tp LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          		&kp N   	&kp M    		&kp COMMA   	&kp DOT  	&ht_tp RSHFT FSLH  	&none
+                                		&mt LALT ESC    &mt LGUI TAB  	&mt LCTRL RET  		&lt 2 SPACE	&mo 1			&kp CAPS 
                         >;
                 };
                 nav_layer {
@@ -187,9 +187,9 @@
 // |  SHFT |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none   &kp EXCL		&kp AT   	&kp LA(N3)     	&kp EQUAL      	&kp GRAVE  	&kp LG(LS(NUMBER_3))	&kp C_RW        	&kp C_PP        &kp C_FF	&bspc_del   	&none    
-   &none   &kp DLLR		&kp PRCNT  	&kp CARET   	&kp MINUS	&kp PIPE  	&none			&sk LG(LS(LA(LCTRL)))	&kp UP		&kp COLON	&kp SEMI	&none       
-   &none   &ht_tp LSHIFT AMPS	&kp STAR  	&kp LBKT	&kp RBKT	&kp TILDE	&none		  	&kp LEFT    		&kp DOWN	&kp RIGHT	&mt RSHFT BSLH	&none
+   &none   &kp EXCL		&kp AT   	&kp LA(N3)     	&kp EQUAL      	&kp GRAVE  	&kp LG(LS(NUMBER_3))	&kp C_RW        	&kp C_PP        &kp C_FF	&bspc_del   		&none    
+   &none   &kp DLLR		&kp PRCNT  	&kp CARET   	&kp MINUS	&kp PIPE  	&none			&sk LG(LS(LA(LCTRL)))	&kp UP		&kp COLON	&kp SEMI		&none       
+   &none   &ht_tp LSHIFT AMPS	&kp STAR  	&kp LBKT	&kp RBKT	&kp TILDE	&none		  	&kp LEFT    		&kp DOWN	&kp RIGHT	&ht_tp RSHFT BSLH	&none
                                 		&trans  	&trans		&trans		&trans   	  	&trans   		&kp C_EJECT
                         >;
                 };
@@ -201,10 +201,10 @@
 // |    |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none	&kp N1  	&kp N2  	&kp N3    	&kp EQUAL	&kp GRAVE    	&sk LG(LS(LA(LCTRL)))	&kp HOME	&kp END   	&kp DEL		&bspc_del   	&none    
-   &none	&kp N4  	&kp N5		&kp N6  	&kp MINUS      	&kp PIPE  	&kp C_VOL_UP		&kp C_BRI_UP	&kp PG_UP  	&kp COLON	&kp SEMI	&none       
-   &none	&kp N7 		&kp N8		&kp N9		&kp N0  	&kp LA(N3)	&kp C_VOL_DN		&kp C_BRI_DN  	&kp PG_DN  	&kp DOT		&kp RSHFT	&none
-                                		&trans  	&trans		&trans		&trans   		&trans  	&caps_word
+   &none	&kp N1  	&kp N2  	&kp N3    	&kp EQUAL	&kp GRAVE    	&sk LG(LS(LA(LCTRL)))	&kp HOME		&kp END   	&kp DEL		&bspc_del   		&none    
+   &none	&kp N4  	&kp N5		&kp N6  	&kp MINUS      	&kp PIPE  	&kp C_VOL_UP		&kp C_BRI_UP		&kp PG_UP  	&kp COLON	&kp SEMI		&none       
+   &none	&kp N7 		&kp N8		&kp N9		&kp N0  	&kp LA(N3)	&kp C_VOL_DN		&kp C_BRI_DN  		&kp PG_DN  	&kp DOT		&kp RSHFT		&none
+                                		&trans  	&trans		&trans		&trans   		&trans  		&caps_word
                         >;
                 };
 		
@@ -215,10 +215,10 @@
 // |         | BRI - | HUE - | SAT - 	| EFF -   | VOL-    |   |   	  |       |       |       |       |         |
 //                           | PWR_OFF  | PWR_OFF | PWR_TOG	| 	| 		  |       |       |
                         bindings = <
-   &none   &kp C_PREV       &kp C_RW         &kp C_PP          &kp C_FF		&kp C_NEXT	&bt BT0 	&bt BT1		&bt BT2 	&bt BT3		&bt BT4		&none
-   &none   &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI   &rgb_ug RGB_EFF	&kp C_VOL_UP	&kp F1 		&kp F2   	&kp F3		&kp F4		&kp F5		&none	 
-   &none   &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD   &rgb_ug RGB_EFR	&kp C_VOL_DN	&kp F6		&kp F7   	&kp F8  	&kp F9		&kp F10		&none	 
-                                        	  &ext_power EP_OFF &ext_power EP_ON	&ext_power EP_TOG  	&trans  	&trans  	&rgb_ug RGB_TOG
+   &none   &kp C_PREV       &kp C_RW         &kp C_PP          &kp C_FF		&kp C_NEXT		&bt BT0 	&bt BT1			&bt BT2 	&bt BT3		&bt BT4			&none
+   &none   &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI   &rgb_ug RGB_EFF	&kp C_VOL_UP		&kp F1 		&kp F2   		&kp F3		&kp F4		&kp F5			&none	 
+   &none   &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD   &rgb_ug RGB_EFR	&kp C_VOL_DN		&kp F6		&kp F7   		&kp F8  	&kp F9		&kp F10			&none	 
+                                          &ext_power EP_OFF &ext_power EP_ON &ext_power EP_TOG  	&trans  	&trans  		&rgb_ug RGB_TOG
                         >;
                 };
 		

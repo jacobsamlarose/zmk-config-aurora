@@ -67,83 +67,83 @@
          };
 	 	 
 	combo_btclear {
-           timeout-ms = <2000>;
+           timeout-ms = <300>;
            key-positions = <21 22>;
            layers = <3>;
            bindings = <&bt BT_CLR>;
          };
 
 	combo_outtog {
-           timeout-ms = <2000>;
+           timeout-ms = <300>;
            key-positions = <33 34>;
            layers = <3>;
            bindings = <&out OUT_TOG>;
          };
          
         combo_tog3 {
-           timeout-ms = <800>;
+           timeout-ms = <300>;
            key-positions = <39 40 41>;
 	   layers = <0 1 2>;
            bindings = <&tog 3>;
          };
 
 	combo_togReset {
-           timeout-ms = <800>;
+           timeout-ms = <300>;
            key-positions = <39 40 41>;
 	   layers = <3>; 
            bindings = <&to 0>;
          };
          
 	combo_lpar {
-           timeout-ms = <300>;
+           timeout-ms = <100>;
            key-positions = <4 5>;
            bindings = <&kp LPAR>;
          };
 		
 	combo_rpar {
-           timeout-ms = <300>;
+           timeout-ms = <100>;
            key-positions = <6 7>;
            bindings = <&kp RPAR>;
          };
 		
 	combo_lbkt {
-           timeout-ms = <300>;
+           timeout-ms = <100>;
            key-positions = <16 17>;
            bindings = <&kp LBKT>;
          };
 		
 	combo_rbkt {
-           timeout-ms = <300>;
+           timeout-ms = <100>;
            key-positions = <18 19>;
            bindings = <&kp RBKT>;
          };
 		
 	combo_lbrc {
-           timeout-ms = <300>;
+           timeout-ms = <100>;
            key-positions = <28 29>;
            bindings = <&kp LBRC>;
          };
 		
 	combo_rbrc {
-           timeout-ms = <300>;
+           timeout-ms = <100>;
            key-positions = <30 31>;
            bindings = <&kp RBRC>;
          };
 
 	combo_hyper {
-           timeout-ms = <300>;
+           timeout-ms = <50>;
            key-positions = <19 20>;
            bindings = <&sk LG(LS(LA(LCTRL)))>;
          };
 
 	combo_bkspc {
-           timeout-ms = <300>;
+           timeout-ms = <50>;
            key-positions = <20 21>;
            bindings = <&kp BACKSPACE>;
          };
 
 	combo_del {
-           timeout-ms = <300>;
+           timeout-ms = <50>;
            key-positions = <14 15>;
            bindings = <&kp DELETE>;
          };
@@ -182,7 +182,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP";
             #binding-cells = <2>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <75>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;

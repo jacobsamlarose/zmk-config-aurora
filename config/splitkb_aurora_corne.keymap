@@ -122,6 +122,18 @@
            bindings = <&kp RBRC>;
          };
 
+	combo_bkspc {
+           timeout-ms = <300>;
+           key-positions = <19 20>;
+           bindings = <&kp BACKSPACE>;
+         };
+
+	combo_del {
+           timeout-ms = <300>;
+           key-positions = <15 16>;
+           bindings = <&kp DELETE>;
+         };
+
      };
      
      behaviors {

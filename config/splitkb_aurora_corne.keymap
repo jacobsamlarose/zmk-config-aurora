@@ -131,14 +131,12 @@
 	combo_bkspc {
            timeout-ms = <300>;
            key-positions = <20 21>;
-	   layers = <0>;
            bindings = <&kp BACKSPACE>;
          };
 
 	combo_del {
            timeout-ms = <300>;
            key-positions = <14 15>;
-	   layers = <0>;
            bindings = <&kp DELETE>;
          };
 

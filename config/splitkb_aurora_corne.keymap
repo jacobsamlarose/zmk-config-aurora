@@ -137,19 +137,26 @@
          };
 
 	combo_bkspc {
-           timeout-ms = <50>;
-           key-positions = <9 10>;
+           timeout-ms = <10>;
+           key-positions = <31 32>;
+	   layers = <0>;
            bindings = <&kp BACKSPACE>;
          };
 
+	combo_del {
+           timeout-ms = <10>;
+           key-positions = <27 28>;
+           bindings = <&kp DEL>;
+         };
+
 	combo_colon {
-	   timeout-ms = <50>;
+	   timeout-ms = <30>;
 	   key-positions = <10 22>;
 	   bindings = <&kp COLON>;
 	 };
 
 	combo_semi {
-	   timeout-ms = <50>;
+	   timeout-ms = <30>;
 	   key-positions = <21 22>;
 	   bindings = <&kp SEMI>;
 	 };

@@ -137,7 +137,7 @@
          };
 
 	combo_bkspc {
-           timeout-ms = <20>;
+           timeout-ms = <25>;
            key-positions = <8 20>;
 	   layers = <0>;
            bindings = <&back>;
@@ -169,14 +169,14 @@
             label      = "ALT_BACK";
             #binding-cells = <0>;
             bindings  = <&bdel>, <&kp BSPC>;
-            mods      = <(MOD_LALT | MOD_RALT)>;
+            mods      = <(MOD_LGUI | MOD_RGUI)>;
 	};
 
 	bdel: backdelete {
             compatible = "zmk,behavior-mod-morph";
             label      = "BACK_DEL";
             #binding-cells = <0>;
-            bindings = <&kp LC(BSPC)>, <&kp DEL>;
+            bindings = <&kp LA(BSPC)>, <&kp DEL>;
             mods     = <(MOD_LSFT | MOD_RSFT)>;
 	};
 

@@ -161,9 +161,22 @@
 	   bindings = <&kp SEMI>;
 	 };
 
+	combo_the {
+	   timeout-ms = <30>;
+	   key-positions = <5 17>;
+	   bindings = <&macro_the>;
+	 };
+
      };
      
      behaviors {
+
+	ZMK_MACRO(macro_the,
+            wait-ms = <30>;
+	    tap-ms = <40>;
+            bindings = <&kp T &kp H &kp E>;
+    	)
+
 	back: altback {
 	    compatible = "zmk,behavior-mod-morph";
             label      = "ALT_BACK";

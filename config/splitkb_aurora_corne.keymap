@@ -164,25 +164,21 @@
      };
      
      behaviors {
-	  back:
-	    altback
-	    {
-	      compatible = "zmk,behavior-mod-morph";
-	      label      = "ALT_BACK";
-	      #binding-cells = <0>;
-	      bindings  = <&bdel>, <&kp BSPC>;
-	      mods      = <(MOD_LALT | MOD_RALT)>;
-	    };
+	back: altback {
+	    compatible = "zmk,behavior-mod-morph";
+            label      = "ALT_BACK";
+            #binding-cells = <0>;
+            bindings  = <&bdel>, <&kp BSPC>;
+            mods      = <(MOD_LALT | MOD_RALT)>;
+	};
 
-	  bdel:
-	    backdelete
-	    {
-	      compatible = "zmk,behavior-mod-morph";
-	      label      = "BACK_DEL";
-	      #binding-cells = <0>;
-	      bindings = <&kp LC(BSPC)>, <&kp DEL>;
-	      mods     = <(MOD_LSFT | MOD_RSFT)>;
-	    };
+	bdel: backdelete {
+            compatible = "zmk,behavior-mod-morph";
+            label      = "BACK_DEL";
+            #binding-cells = <0>;
+            bindings = <&kp LC(BSPC)>, <&kp DEL>;
+            mods     = <(MOD_LSFT | MOD_RSFT)>;
+	};
 
 	hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";

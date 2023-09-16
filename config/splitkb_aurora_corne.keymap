@@ -172,7 +172,7 @@
 	   timeout-ms = <30>;
 	   layers = <2>;
 	   key-positions = <5 17>;
-	   bindings = <&macro_the>;
+	   bindings = <&macro_cap_the>;
 	 };
 
      };

@@ -174,7 +174,7 @@
 	ZMK_MACRO(macro_the,
             wait-ms = <30>;
 	    tap-ms = <40>;
-            bindings = <&kp T &kp H &kp E>;
+            bindings = <&kp T &kp H &kp E &kp SPACE>;
     	)
 
 	back: altback {

@@ -163,6 +163,14 @@
 
 	combo_the {
 	   timeout-ms = <30>;
+	   layers = <0>;
+	   key-positions = <5 17>;
+	   bindings = <&macro_the>;
+	 };
+
+	combo_cap_the {
+	   timeout-ms = <30>;
+	   layers = <2>;
 	   key-positions = <5 17>;
 	   bindings = <&macro_the>;
 	 };
@@ -170,6 +178,18 @@
      };
      
      behaviors {
+
+        macro_cap_the: macro_cap_the {
+            label = "ZM_macro_cap_the";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp T>
+                , <&macro_release &kp LSHFT>
+		, <&macro_tap &kp H &kp E &kp SPACE>
+                ;
+        };
 
 	ZMK_MACRO(macro_the,
             wait-ms = <30>;

@@ -187,7 +187,7 @@
      behaviors {
 
 	macro_slideover: macro_slideover {
-            label = "ZM_macro_cap_the";
+            label = "ZM_macro_slideover";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings

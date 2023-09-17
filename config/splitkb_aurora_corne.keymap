@@ -13,7 +13,7 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/led/led.h>
 
-/*           40 Keys
+/*           40 Keys (Note: my corne is a 5x3; I just ignore the outer columns)
 ╭─────────────────╮ ╭─────────────────╮
 │ 0  1  2  3  4  5│ │ 6  7  8  9 10 11│
 │12 13 14 15 16 17│ │18 19 20 21 22 23│
@@ -175,6 +175,13 @@
 	   bindings = <&macro_cap_the>;
 	 };
 
+	combo_slideover {
+	   timeout-ms = <30>;
+	   layers = <0>;
+	   key-positions = <2 14>;
+	   bindings = <&slideover>;
+	 };
+
      };
      
      behaviors {
@@ -195,6 +202,12 @@
             wait-ms = <30>;
 	    tap-ms = <40>;
             bindings = <&kp T &kp H &kp E &kp SPACE>;
+    	)
+
+	ZMK_MACRO(slideover,
+            wait-ms = <30>;
+	    tap-ms = <40>;
+            bindings = <&kp BSLH &kp CAPS>;
     	)
 
 	back: altback {

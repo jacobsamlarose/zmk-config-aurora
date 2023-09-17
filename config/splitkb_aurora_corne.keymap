@@ -179,12 +179,23 @@
 	   timeout-ms = <30>;
 	   layers = <0>;
 	   key-positions = <2 14>;
-	   bindings = <&slideover>;
+	   bindings = <&macro_slideover>;
 	 };
 
      };
      
      behaviors {
+
+	macro_slideover: macro_slideover {
+            label = "ZM_macro_cap_the";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp CAPS>
+                , <&macro_tap &kp BSLH>
+                , <&macro_release &kp CAPS>
+                ;
+        };
 
         macro_cap_the: macro_cap_the {
             label = "ZM_macro_cap_the";
@@ -202,12 +213,6 @@
             wait-ms = <30>;
 	    tap-ms = <40>;
             bindings = <&kp T &kp H &kp E &kp SPACE>;
-    	)
-
-	ZMK_MACRO(slideover,
-            wait-ms = <30>;
-	    tap-ms = <40>;
-            bindings = <&kp BSLH &kp CAPS>;
     	)
 
 	back: altback {

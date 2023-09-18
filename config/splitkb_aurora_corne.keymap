@@ -143,6 +143,13 @@
            bindings = <&back>;
          };
 
+	combo_bkspc_one {
+           timeout-ms = <25>;
+           key-positions = <8 20>;
+	   layers = <1 2>;
+           bindings = <&bspc_del>;
+         };
+
 	combo_del {
            timeout-ms = <10>;
            key-positions = <15 14>;

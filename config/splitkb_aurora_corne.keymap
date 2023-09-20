@@ -203,6 +203,20 @@
 	   bindings = <&kp PG_DN>;
 	 };
 
+	combo_apos {
+	   timeout-ms = <30>;
+	   layers = <0>;
+	   key-positions = <7 19>;
+	   bindings = <&kp SQT>;
+	 };
+	
+	combo_quote {
+	   timeout-ms = <30>;
+	   layers = <0>;
+	   key-positions = <19 31>;
+	   bindings = <&kp LS(SQT)>;
+	 };
+
      };
      
      behaviors {

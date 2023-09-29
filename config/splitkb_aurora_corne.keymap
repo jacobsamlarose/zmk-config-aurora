@@ -335,9 +335,9 @@
 // |  SHFT |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none   &kp EXCL		&kp AT   	&kp LA(N3)     	&kp EQUAL      	&kp GRAVE  	&kp LG(LS(NUMBER_3))	&kp C_RW        	&kp C_PP        &kp C_FF	&bspc_del   		&none    
-   &none   &kp DLLR		&kp PRCNT  	&kp CARET   	&kp MINUS	&kp PIPE  	&kp HOME		&pg_pd			&kp UP		&kp COLON	&kp SEMI		&none       
-   &none   &ht_tp LSHIFT AMPS	&kp STAR  	&kp LBKT	&kp RBKT	&kp TILDE	&kp END		  	&kp LEFT    		&kp DOWN	&kp RIGHT	&ht_tp RSHFT BSLH	&none
+   &none   &kp EXCL		&kp AT   	&kp LA(N3)     	&kp EQUAL      	&kp GRAVE  	&kp LG(LS(NUMBER_3))	&kp C_RW		&kp C_PP        &kp C_FF	&kp PG_UP   		&none    
+   &none   &kp DLLR		&kp PRCNT  	&kp CARET   	&kp MINUS	&kp PIPE  	&none			&kp HOME		&kp UP		&kp END		&kp PG_DN		&none       	
+   &none   &ht_tp LSHIFT AMPS	&kp STAR  	&kp LBKT	&kp RBKT	&kp TILDE	&none		 	&kp LEFT    		&kp DOWN	&kp RIGHT	&ht_tp RSHFT BSLH	&none
                                 		&trans  	&trans		&trans		&trans   	  	&trans   		&kp C_EJECT
                         >;
                 };
@@ -349,9 +349,9 @@
 // |    |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none   &kp N1  		&kp N2  	&kp N3    	&kp EQUAL	&kp GRAVE    	&kp C_VOL_DN		&kp C_VOL_UP		&back  		&none		&bspc_del   		&none    
-   &none   &kp N4  		&kp N5		&kp N6  	&kp MINUS      	&kp PIPE  	&kp C_BRI_UP		&kp PG_UP		&bspc_del  	&kp COLON	&kp SEMI		&none       
-   &none   &ht_tp LSHIFT N7 	&kp N8		&kp N9		&kp N0  	&kp LA(N3)	&kp C_BRI_DN		&kp PG_DN  		&none  		&kp DOT		&kp RSHFT		&none
+   &none   &kp N1  		&kp N2  	&kp N3    	&kp EQUAL	&kp GRAVE    	&none			&none			&back  		&none		&bspc_del   		&none    
+   &none   &kp N4  		&kp N5		&kp N6  	&kp MINUS      	&kp PIPE  	&kp C_BRI_UP		&kp C_VOL_UP		&bspc_del  	&kp COLON	&kp SEMI		&none       
+   &none   &ht_tp LSHIFT N7 	&kp N8		&kp N9		&kp N0  	&kp LA(N3)	&kp C_BRI_DN		&kp C_VOL_DN		&back  	  	&kp DOT		&kp RSHFT		&none
                                 		&trans  	&trans		&trans		&trans   		&trans  		&caps_word
                         >;
                 };

@@ -158,13 +158,13 @@
 
 	combo_colon {
 	   timeout-ms = <30>;
-	   key-positions = <10 22>;
+	   key-positions = <21 33>;
 	   bindings = <&kp COLON>;
 	 };
 
 	combo_semi {
 	   timeout-ms = <30>;
-	   key-positions = <21 22>;
+	   key-positions = <20 32>;
 	   bindings = <&kp SEMI>;
 	 };
 

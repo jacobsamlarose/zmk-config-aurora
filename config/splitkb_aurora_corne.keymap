@@ -37,6 +37,12 @@
     retro-tap;
 };
 
+&sk {
+    release-after-ms = <1000>;
+    quick-release;
+    /delete-property/ ignore-modifiers;
+};
+
 / {
 	chosen {
 		zmk,underglow = &led_strip;
@@ -221,6 +227,22 @@
      
      behaviors {
 
+	td_esc: tap_dance_esc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_ESC";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LALT>, <&kp ESC>;
+        };
+
+	td_ss: tap_dance_stickshift {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_STICKSHIFT";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 1>, <&sk RSHFT>;
+        };
+
 	macro_slideover: macro_slideover {
             label = "ZM_macro_slideover";
             compatible = "zmk,behavior-macro";
@@ -325,7 +347,7 @@
    &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          		&kp Y   	&kp U    		&kp I       	&kp O    	&kp P     	   	&none
    &none   &kp A    		&kp S    	&kp D       	&hm LGUI F      &kp G          		&kp H   	&kp J    		&kp K       	&kp L    	&kp SQT  	   	&none
    &none   &mt LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          		&kp N   	&kp M    		&kp COMMA   	&kp DOT  	&ht_tp RSHFT FSLH  	&none
-                                		&mt LALT ESC    &mt LGUI TAB  	&mt LCTRL RET  		&lt 2 SPACE	&mo 1			&kp CAPS 
+                                		&td_esc	   	&mt LGUI TAB  	&mt LCTRL RET  		&lt 2 SPACE	&mo 1			&kp CAPS 
                         >;
                 };
                 nav_layer {

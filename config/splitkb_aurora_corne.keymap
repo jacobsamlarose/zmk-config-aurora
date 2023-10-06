@@ -243,6 +243,14 @@
             bindings = <&mo 1>, <&sk RSHFT>;
         };
 
+	td_mac: tap_dance_macro {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MACRO";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&lt 2 SPACE>, <&macro_sbreak>;
+        };
+
 	macro_slideover: macro_slideover {
             label = "ZM_macro_slideover";
             compatible = "zmk,behavior-macro";
@@ -270,6 +278,12 @@
             wait-ms = <30>;
 	    tap-ms = <40>;
             bindings = <&kp T &kp H &kp E &kp SPACE>;
+    	)
+
+	ZMK_MACRO(macro_sbreak,
+            wait-ms = <30>;
+	    tap-ms = <40>;
+            bindings = <&kp DOT &kp SPACE &sk RSHFT>;
     	)
 
 	back: altback {
@@ -347,7 +361,7 @@
    &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          		&kp Y   	&kp U    		&kp I       	&kp O    	&kp P     	   	&none
    &none   &kp A    		&kp S    	&kp D       	&hm LGUI F      &kp G          		&kp H   	&kp J    		&kp K       	&kp L    	&kp SQT  	   	&none
    &none   &mt LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          		&kp N   	&kp M    		&kp COMMA   	&kp DOT  	&ht_tp RSHFT FSLH  	&none
-                                		&td_esc	   	&mt LGUI TAB  	&mt LCTRL RET  		&lt 2 SPACE	&mo 1			&kp CAPS 
+                                		&td_esc	   	&mt LGUI TAB  	&mt LCTRL RET  		&lt 2 SPACE	&td_ss			&kp CAPS 
                         >;
                 };
                 nav_layer {

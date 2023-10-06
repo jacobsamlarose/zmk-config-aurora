@@ -361,7 +361,7 @@
    &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          		&kp Y   	&kp U    		&kp I       	&kp O    	&kp P     	   	&none
    &none   &kp A    		&kp S    	&kp D       	&hm LGUI F      &kp G          		&kp H   	&kp J    		&kp K       	&kp L    	&kp SQT  	   	&none
    &none   &mt LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          		&kp N   	&kp M    		&kp COMMA   	&kp DOT  	&ht_tp RSHFT FSLH  	&none
-                                		&td_esc	   	&mt LGUI TAB  	&mt LCTRL RET  		&lt 2 SPACE	&td_ss			&kp CAPS 
+                                		&td_esc	   	&mt LGUI TAB  	&mt LCTRL RET  		&td_mac		&td_ss			&kp CAPS 
                         >;
                 };
                 nav_layer {

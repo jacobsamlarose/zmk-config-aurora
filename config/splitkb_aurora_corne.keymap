@@ -38,7 +38,7 @@
 };
 
 &sk {
-    release-after-ms = <1000>;
+    release-after-ms = <4000>;
     quick-release;
     /delete-property/ ignore-modifiers;
 };
@@ -198,29 +198,50 @@
 	combo_pgup {
 	   timeout-ms = <30>;
 	   layers = <0>;
-	   key-positions = <6 18>;
+	   key-positions = <5 17>;
 	   bindings = <&kp PG_UP>;
 	 };
 
 	combo_pgdn {
 	   timeout-ms = <30>;
 	   layers = <0>;
-	   key-positions = <18 30>;
+	   key-positions = <17 29>;
 	   bindings = <&kp PG_DN>;
 	 };
 
 	combo_apos {
 	   timeout-ms = <30>;
 	   layers = <0>;
-	   key-positions = <7 19>;
+	   key-positions = <19 31>;
 	   bindings = <&kp SQT>;
 	 };
 	
 	combo_quote {
 	   timeout-ms = <30>;
 	   layers = <0>;
-	   key-positions = <19 31>;
+	   key-positions = <18 30>;
 	   bindings = <&kp LS(SQT)>;
+	 };
+
+	combo_fwd {
+	   timeout-ms = <30>;
+	   layers = <0>;
+	   key-positions = <8 9>;
+	   bindings = <&kp C_FF>;
+	 };
+
+	combo_rwd {
+	   timeout-ms = <30>;
+	   layers = <0>;
+	   key-positions = <7 8>;
+	   bindings = <&kp C_RW>;
+	 };
+
+	combo_play {
+	   timeout-ms = <30>;
+	   layers = <0>;
+	   key-positions = <7 8 9>;
+	   bindings = <&kp C_PP>;
 	 };
 
      };
@@ -369,7 +390,7 @@
 //                    | ALT (ESC) | CMD (ALT) | CTL(ENT) |   | SPC | FN2  | FN1 |
                         bindings = <
    &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          		&kp Y   	&kp U    		&kp I       	&kp O    	&kp P     	   	&none
-   &none   &kp A    		&kp S    	&kp D       	&hm LGUI F      &kp G          		&kp H   	&kp J    		&kp K       	&kp L    	&kp SQT  	   	&none
+   &none   &kp A    		&kp S    	&lt 1 D       	&hm LGUI F      &kp G          		&kp H   	&kp J    		&kp K       	&kp L    	&kp SQT  	   	&none
    &none   &mt LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          		&kp N   	&kp M    		&kp COMMA   	&kp DOT  	&ht_tp RSHFT FSLH  	&none
                                 		&td_esc	   	&mt LGUI TAB  	&mt LCTRL RET  		&lt 2 SPACE	&ht_ls 1 RSHFT		&kp CAPS 
                         >;
@@ -381,9 +402,9 @@
 // |  SHFT |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none   &kp EXCL		&kp AT   	&kp LA(N3)     	&kp EQUAL      	&kp GRAVE  	&kp LG(LS(NUMBER_3))	&kp C_RW		&kp C_PP        &kp C_FF	&kp PG_UP   		&none    
-   &none   &kp DLLR		&kp PRCNT  	&kp CARET   	&kp MINUS	&kp PIPE  	&kp HOME		&kp HOME		&kp UP		&kp END		&kp PG_DN		&none       	
-   &none   &ht_tp LSHIFT AMPS	&kp STAR  	&kp LBKT	&kp RBKT	&kp TILDE	&kp END		 	&kp LEFT    		&kp DOWN	&kp RIGHT	&ht_tp RSHFT BSLH	&none
+   &none   &kp EXCL		&kp AT   	&kp LA(N3)     	&kp EQUAL      	&kp GRAVE  	&kp LG(LS(NUMBER_3))	&kp PG_UP		&none	        &kp HOME	&none   		&none    
+   &none   &kp DLLR		&kp PRCNT  	&kp CARET   	&kp MINUS	&kp PIPE  	&none			&kp PG_DN		&kp UP		&kp END		&none			&none       	
+   &none   &ht_tp LSHIFT AMPS	&kp STAR  	&kp LBKT	&kp RBKT	&kp TILDE	&none		 	&kp LEFT    		&kp DOWN	&kp RIGHT	&ht_tp RSHFT BSLH	&none
                                 		&trans  	&trans		&trans		&trans   	  	&trans   		&kp C_EJECT
                         >;
                 };

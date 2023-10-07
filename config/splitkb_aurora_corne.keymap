@@ -184,7 +184,7 @@
 	combo_cap_the {
 	   timeout-ms = <30>;
 	   layers = <2>;
-	   key-positions = <5 17>;
+	   key-positions = <4 16>;
 	   bindings = <&macro_cap_the>;
 	 };
 
@@ -270,22 +270,6 @@
             bindings = <&kp LALT>, <&kp ESC>;
         };
 
-	td_ss: tap_dance_stickshift {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_STICKSHIFT";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&sk RSHFT>;
-        };
-
-	td_mac: tap_dance_macro {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MACRO";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&lt 2 SPACE>, <&macro_sbreak>;
-        };
-
 	macro_slideover: macro_slideover {
             label = "ZM_macro_slideover";
             compatible = "zmk,behavior-macro";
@@ -293,6 +277,28 @@
             bindings
                 = <&macro_press &kp CAPS>
                 , <&macro_tap &kp BSLH>
+                , <&macro_release &kp CAPS>
+                ;
+        };
+
+	macro_windows: macro_windows {
+            label = "ZM_macro_windows";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp CAPS>
+                , <&macro_tap &kp DOWN>
+                , <&macro_release &kp CAPS>
+                ;
+        };
+
+	macro_switch: macro_switch {
+            label = "ZM_macro_switch";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp CAPS>
+                , <&macro_tap &kp GRAVE>
                 , <&macro_release &kp CAPS>
                 ;
         };
@@ -347,27 +353,11 @@
             bindings = <&kp>, <&kp>;
         };
 
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <500>;
-            bindings = <&kp CAPS>, <&caps_word>;
-        };
-
 	bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             label = "BACKSPACE_DELETE";
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-	pg_pd: page_updown {
-            compatible = "zmk,behavior-mod-morph";
-            label = "PAGE_UPDOWN";
-            #binding-cells = <0>;
-            bindings = <&kp PG_UP>, <&kp PG_DN>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -416,9 +406,9 @@
 // |  SHFT |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-&none   &kp EXCL		&kp AT   	&kp LA(N3)     	&kp EQUAL      	&kp GRAVE  	&kp C_BRI_UP		&kp C_VOL_UP		&none	        &none		&none   		&none    
+   &none   &kp EXCL		&kp AT   	&kp LA(N3)     	&kp EQUAL      	&kp GRAVE  	&kp C_BRI_UP		&kp C_VOL_UP		&none	        &none		&none   		&none    
    &none   &kp DLLR		&kp PRCNT  	&kp CARET   	&kp MINUS	&kp PIPE  	&kp C_BRI_DN		&kp C_VOL_DN		&kp UP		&none		&none			&none       	
-   &none   &ht_tp LSHIFT AMPS	&kp STAR  	&kp LBKT	&kp RBKT	&kp TILDE	&kp LG(LS(NUMBER_3)) 	&kp LEFT    		&kp DOWN	&kp RIGHT	&ht_tp RSHFT BSLH	&none
+   &none   &ht_tp LSHIFT AMPS	&kp STAR  	&none		&kp CAPS	&kp TILDE	&kp LG(LS(NUMBER_3)) 	&kp LEFT    		&kp DOWN	&kp RIGHT	&ht_tp RSHFT BSLH	&none
                                 		&trans  	&trans		&trans		&trans   	  	&trans   		&kp C_EJECT
                         >;
                 };
@@ -430,9 +420,9 @@
 // |    |  7  |  8  |  9  |  0  |    =     |   |     |     | LEFT | DOWN | RIGHT | SHFT/CAPW |
 //                     | ALT | CMD | CTL(ENT) |   | SPC | FN3 |  FN1 |
                         bindings = <
-   &none   &kp N1  		&kp N2  	&kp N3    	&kp EQUAL	&kp GRAVE    	&none			&none			&none  		&none		&none   		&none    
-   &none   &kp N4  		&kp N5		&kp N6  	&kp MINUS      	&kp PIPE  	&none			&back			&bspc_del  	&kp DEL		&kp SEMI		&none       
-   &none   &ht_tp LSHIFT N7 	&kp N8		&kp N9		&kp N0  	&kp LA(N3)	&none			&none			&none  	  	&kp DOT		&kp RSHFT		&none
+   &none   &kp N1  		&kp N2  	&kp N3    	&kp EQUAL	&kp GRAVE    	&macro_switch		&none			&none  		&none		&none   		&none    
+   &none   &kp N4  		&kp N5		&kp N6  	&kp MINUS      	&kp PIPE  	&macro_windows		&back			&bspc_del  	&kp DEL		&kp SEMI		&none       
+   &none   &ht_tp LSHIFT N7 	&kp N8		&kp N9		&kp N0  	&kp LA(N3)	&macro_sbreak		&none			&none  	  	&kp DOT		&kp RSHFT		&none
                                 		&trans  	&trans		&trans		&trans   		&trans  		&caps_word
                         >;
                 };

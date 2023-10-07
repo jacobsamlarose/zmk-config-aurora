@@ -156,12 +156,6 @@
            bindings = <&bspc_del>;
          };
 
-	combo_del {
-           timeout-ms = <10>;
-           key-positions = <15 14>;
-           bindings = <&kp DEL>;
-         };
-
 	combo_colon {
 	   timeout-ms = <30>;
 	   key-positions = <21 33>;

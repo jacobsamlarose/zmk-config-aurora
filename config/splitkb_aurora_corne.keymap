@@ -355,13 +355,12 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-	ht_tp: holdtap_tappreferred {
+	ht_b: holdtap_balanced {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP"; 
-	    retro-tap;
             #binding-cells = <2>;
-            tapping-term-ms = <50>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
 
@@ -399,7 +398,7 @@
                         bindings = <
    &none   &kp Q    		&kp W    	&kp E       	&kp R      	&kp T          		&kp Y   	&kp U    		&kp I       	&kp O    	&kp P     	   	&none
    &none   &kp A    		&kp S    	&ht_hl 1 D     	&hm LGUI F      &kp G          		&kp H   	&kp J    		&kp K       	&kp L    	&kp SQT  	   	&none
-   &none   &ht_tp LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          		&kp N   	&kp M    		&kp COMMA   	&kp DOT  	&ht_tp RSHFT FSLH  	&none
+   &none   &ht_b LSHIFT Z    	&kp X    	&kp C       	&kp V      	&kp B          		&kp N   	&kp M    		&kp COMMA   	&kp DOT  	&ht_b RSHFT FSLH  	&none
                                 		&td_esc	   	&mt LGUI TAB  	&mt LCTRL RET  		&lt 2 SPACE	&ht_ls 1 RSHFT		&kp CAPS 
                         >;
                 };
@@ -412,7 +411,7 @@
                         bindings = <
    &none   &kp EXCL		&kp AT   	&kp LA(N3)     	&kp EQUAL      	&kp GRAVE  	&kp C_BRI_UP		&kp C_VOL_UP		&none	        &none		&none   		&none    
    &none   &kp DLLR		&kp PRCNT  	&kp CARET   	&kp MINUS	&kp PIPE  	&kp C_BRI_DN		&kp C_VOL_DN		&kp UP		&none		&none			&none       	
-   &none   &ht_tp LSHIFT AMPS	&kp STAR  	&none		&kp CAPS	&kp TILDE	&kp LG(LS(NUMBER_3)) 	&kp LEFT    		&kp DOWN	&kp RIGHT	&ht_tp RSHFT BSLH	&none
+   &none   &ht_b LSHIFT AMPS	&kp STAR  	&none		&kp CAPS	&kp TILDE	&kp LG(LS(NUMBER_3)) 	&kp LEFT    		&kp DOWN	&kp RIGHT	&ht_b RSHFT BSLH	&none
                                 		&trans  	&trans		&trans		&trans   	  	&trans   		&kp C_EJECT
                         >;
                 };
@@ -426,7 +425,7 @@
                         bindings = <
    &none   &kp N1  		&kp N2  	&kp N3    	&kp EQUAL	&kp GRAVE    	&macro_switch		&none			&none  		&none		&none   		&none    
    &none   &kp N4  		&kp N5		&kp N6  	&kp MINUS      	&kp PIPE  	&macro_windows		&back			&bspc_del  	&kp DEL		&kp SEMI		&none       
-   &none   &ht_tp LSHIFT N7 	&kp N8		&kp N9		&kp N0  	&kp LA(N3)	&macro_sbreak		&none			&none  	  	&kp DOT		&kp RSHFT		&none
+   &none   &ht_b LSHIFT N7 	&kp N8		&kp N9		&kp N0  	&kp LA(N3)	&macro_sbreak		&none			&none  	  	&kp DOT		&kp RSHFT		&none
                                 		&trans  	&trans		&trans		&trans   		&trans  		&caps_word
                         >;
                 };

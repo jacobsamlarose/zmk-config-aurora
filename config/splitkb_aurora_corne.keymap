@@ -360,8 +360,7 @@
             label = "HOLD_TAP"; 
 	    retro-tap;
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
@@ -371,7 +370,6 @@
             label = "HOLDTAP_HOMELAY"; 
             #binding-cells = <2>;
             tapping-term-ms = <400>;
-            quick-tap-ms = <0>;
             flavor = "tap-preferred";
 	    require-prior-idle-ms = <125>;
             bindings = <&mo>, <&kp>;
@@ -383,7 +381,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
             quick-tap-ms = <0>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&mo>, <&sk>;
         };
 	

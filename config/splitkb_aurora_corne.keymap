@@ -213,14 +213,14 @@
 	combo_apos {
 	   timeout-ms = <50>;
 	   layers = <0>;
-	   key-positions = <32 21>;
+	   key-positions = <20 21>;
 	   bindings = <&kp SQT>;
 	 };
 	
 	combo_quote {
 	   timeout-ms = <50>;
 	   layers = <0>;
-	   key-positions = <20 21>;
+	   key-positions = <21 22>;
 	   bindings = <&kp LS(SQT)>;
 	 };
 

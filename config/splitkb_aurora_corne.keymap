@@ -144,7 +144,7 @@
 
 	combo_bkspc {
            timeout-ms = <25>;
-           key-positions = <8 20>;
+           key-positions = <7 19>;
 	   layers = <0>;
            bindings = <&back>;
          };
@@ -158,7 +158,7 @@
 
 	combo_colon {
 	   timeout-ms = <30>;
-	   key-positions = <21 33>;
+	   key-positions = <8 20>;
 	   bindings = <&kp COLON>;
 	 };
 

@@ -237,7 +237,7 @@
 	combo_skshift {
            timeout-ms = <300>;
            key-positions = <21 22>;
-           layers = <2>;
+           layers = <0>;
            bindings = <&sk RSHFT>;
          };
 

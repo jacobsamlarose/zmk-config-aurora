@@ -132,6 +132,7 @@
 	combo_hyper {
            timeout-ms = <50>;
            key-positions = <19 20>;
+	   layers = <0 2>;
            bindings = <&sk LG(LS(LA(LCTRL)))>;
          };
 
@@ -142,22 +143,10 @@
            bindings = <&back>;
          };
 
-	combo_bkspc_one {
-           timeout-ms = <25>;
-           key-positions = <8 20>;
-	   layers = <1 2>;
-           bindings = <&bspc_del>;
-         };
-
-	combo_colon {
-	   timeout-ms = <30>;
-	   key-positions = <8 20>;
-	   bindings = <&kp COLON>;
-	 };
-
 	combo_semi {
 	   timeout-ms = <30>;
-	   key-positions = <20 32>;
+	   key-positions = <8 20>;
+	   layers = <0>;
 	   bindings = <&kp SEMI>;
 	 };
 
@@ -184,44 +173,37 @@
 
 	combo_pgup {
 	   timeout-ms = <50>;
-	   layers = <0>;
-	   key-positions = <5 17>;
+	   layers = <1>;
+	   key-positions = <8 20>;
 	   bindings = <&kp PG_UP>;
 	 };
 
 	combo_pgdn {
 	   timeout-ms = <50>;
-	   layers = <0>;
-	   key-positions = <17 29>;
+	   layers = <1>;
+	   key-positions = <20 32>;
 	   bindings = <&kp PG_DN>;
 	 };
 
 	combo_home {
 	   timeout-ms = <50>;
-	   layers = <0>;
-	   key-positions = <6 18>;
+	   layers = <1>;
+	   key-positions = <19 20>;
 	   bindings = <&kp HOME>;
 	 };
 
 	combo_end {
 	   timeout-ms = <50>;
-	   layers = <0>;
-	   key-positions = <18 30>;
+	   layers = <1>;
+	   key-positions = <20 21>;
 	   bindings = <&kp END>;
 	 };
 
 	combo_apos {
 	   timeout-ms = <50>;
 	   layers = <0>;
-	   key-positions = <20 21>;
+	   key-positions = <7 19>;
 	   bindings = <&kp SQT>;
-	 };
-	
-	combo_quote {
-	   timeout-ms = <50>;
-	   layers = <0>;
-	   key-positions = <21 22>;
-	   bindings = <&kp LS(SQT)>;
 	 };
 
 	combo_fwd {

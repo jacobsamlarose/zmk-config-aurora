@@ -209,7 +209,7 @@
 	combo_altapos {
 	   timeout-ms = <50>;
 	   layers = <0>;
-	   key-positions = <9 10>;
+	   key-positions = <8 9>;
 	   bindings = <&kp SQT>;
 	 };
 

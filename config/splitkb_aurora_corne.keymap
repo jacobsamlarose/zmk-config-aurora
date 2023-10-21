@@ -171,6 +171,20 @@
 	   bindings = <&macro_slideover>;
 	 };
 
+	combo_apos {
+	   timeout-ms = <50>;
+	   layers = <0>;
+	   key-positions = <8 9>;
+	   bindings = <&kp SQT>;
+	 };
+
+	combo_skshf {
+           timeout-ms = <300>;
+           layers = <0>;
+           key-positions = <19 8>;
+           bindings = <&sk RSHFT>;
+         };
+
 	combo_pgup {
 	   timeout-ms = <50>;
 	   layers = <1>;
@@ -199,20 +213,6 @@
 	   bindings = <&kp END>;
 	 };
 
-	combo_apos {
-	   timeout-ms = <50>;
-	   layers = <0>;
-	   key-positions = <7 19>;
-	   bindings = <&kp SQT>;
-	 };
-
-	combo_altapos {
-	   timeout-ms = <50>;
-	   layers = <0>;
-	   key-positions = <8 9>;
-	   bindings = <&kp SQT>;
-	 };
-
 	combo_fwd {
 	   timeout-ms = <50>;
 	   layers = <1>;
@@ -233,13 +233,6 @@
 	   key-positions = <7 8 9>;
 	   bindings = <&kp C_PP>;
 	 };
-
-	combo_skshift {
-           timeout-ms = <300>;
-           layers = <0>;
-           key-positions = <20 21>;
-           bindings = <&sk RSHFT>;
-         };
 
      };
      
@@ -414,7 +407,7 @@
                         bindings = <
    &none   &kp N1  		&kp N2  	&kp N3    	&kp EQUAL	&kp LA(N3)    		&macro_switch	&none		&none  		&none		&kp LG(LS(NUMBER_3))   	&none    
    &none   &kp N4  		&kp N5		&kp N6  	&kp MINUS      	&kp PIPE  		&macro_windows	&bdel		&kp BSPC  	&kp DEL		&kp BSLH		&none       
-   &none   &ht_b LSHIFT N7 	&kp N8		&kp N9		&kp N0  	&kp GRAVE		&sk RSHFT	&kp FSLH	&kp COMMA  	&kp DOT		&sk RSHFT		&none
+   &none   &ht_b LSHIFT N7 	&kp N8		&kp N9		&kp N0  	&kp GRAVE		&kp FSLH	&none		&kp COMMA  	&kp DOT		&sk RSHFT		&none
                                 		&trans  	&trans		&trans			&trans   	&trans  	&caps_word
                         >;
                 };

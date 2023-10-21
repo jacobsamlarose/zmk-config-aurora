@@ -187,7 +187,7 @@
 	combo_skshf {
            timeout-ms = <300>;
            layers = <0>;
-           key-positions = <20 21>;
+           key-positions = <31 32>;
            bindings = <&sk RSHFT>;
          };
 

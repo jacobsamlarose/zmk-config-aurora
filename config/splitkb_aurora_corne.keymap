@@ -34,7 +34,7 @@
 
 &mt {
     tapping-term-ms = <500>;
-    retro-tap;
+    // retro-tap;
 };
 
 &sk {

@@ -150,6 +150,13 @@
 	   bindings = <&kp SEMI>;
 	 };
 
+	combo_colon {
+	   timeout-ms = <30>;
+	   key-positions = <7 19>;
+	   layers = <0>;
+	   bindings = <&kp COLON>;
+	 };
+
 	combo_the {
 	   timeout-ms = <30>;
 	   layers = <0>;

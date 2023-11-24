@@ -347,9 +347,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_TAP"; 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+            bindings = <&sk>, <&kp>;
         };
 
 	ht_hl: holdtap_homerowlayer {

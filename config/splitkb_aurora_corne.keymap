@@ -135,13 +135,6 @@
            bindings = <&sk LG(LS(LA(LCTRL)))>;
          };
 
-	combo_bkspc {
-           timeout-ms = <25>;
-           key-positions = <9 21>;
-	   layers = <0>;
-           bindings = <&back>;
-         };
-
 	combo_semi {
 	   timeout-ms = <30>;
 	   key-positions = <8 20>;
